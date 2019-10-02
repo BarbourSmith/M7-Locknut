@@ -12,8 +12,8 @@
                 {
                     "atomType": "RegularPolygon",
                     "name": "RegularPolygon",
-                    "x": 211,
-                    "y": 112,
+                    "x": 201,
+                    "y": 110,
                     "uniqueID": 914788,
                     "ioValues": [
                         {
@@ -22,7 +22,7 @@
                         },
                         {
                             "name": "diameter",
-                            "ioValue": 11
+                            "ioValue": 12.5
                         }
                     ]
                 },
@@ -42,16 +42,16 @@
                 {
                     "atomType": "Difference",
                     "name": "Difference",
-                    "x": 313,
-                    "y": 180,
+                    "x": 335,
+                    "y": 178,
                     "uniqueID": 557222,
                     "ioValues": []
                 },
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 423,
-                    "y": 125,
+                    "x": 546,
+                    "y": 162,
                     "uniqueID": 733044,
                     "ioValues": [
                         {
@@ -59,6 +59,21 @@
                             "ioValue": 5.5
                         }
                     ]
+                },
+                {
+                    "atomType": "Add BOM Tag",
+                    "name": "Add BOM Tag",
+                    "x": 731,
+                    "y": 155,
+                    "uniqueID": 805834,
+                    "ioValues": [],
+                    "BOMitem": {
+                        "BOMitemName": "M7 Nut",
+                        "numberNeeded": 1,
+                        "costUSD": 4.31,
+                        "source": "https://www.mcmaster.com/90592a018",
+                        "totalNeeded": 0
+                    }
                 },
                 {
                     "atomType": "Output",
@@ -71,12 +86,6 @@
             "allConnectors": [
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap1ID": 914788,
-                    "ap2ID": 733044
-                },
-                {
-                    "ap1Name": "geometry",
                     "ap2Name": "geometry1",
                     "ap1ID": 914788,
                     "ap2ID": 557222
@@ -86,6 +95,23 @@
                     "ap2Name": "geometry2",
                     "ap1ID": 868425,
                     "ap2ID": 557222
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 557222,
+                    "ap2ID": 733044
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 733044,
+                    "ap2ID": 805834
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": 805834
                 }
             ],
             "fileTypeVersion": 1
