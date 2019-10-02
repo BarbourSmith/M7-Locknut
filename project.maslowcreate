@@ -10,6 +10,57 @@
             "topLevel": true,
             "allAtoms": [
                 {
+                    "atomType": "RegularPolygon",
+                    "name": "RegularPolygon",
+                    "x": 211,
+                    "y": 112,
+                    "uniqueID": 914788,
+                    "ioValues": [
+                        {
+                            "name": "number of sides",
+                            "ioValue": 6
+                        },
+                        {
+                            "name": "diameter",
+                            "ioValue": 11
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 210,
+                    "y": 228,
+                    "uniqueID": 868425,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 7.5
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 313,
+                    "y": 180,
+                    "uniqueID": 557222,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 423,
+                    "y": 125,
+                    "uniqueID": 733044,
+                    "ioValues": [
+                        {
+                            "name": "height",
+                            "ioValue": 5.5
+                        }
+                    ]
+                },
+                {
                     "atomType": "Output",
                     "name": "Output",
                     "x": 1001,
@@ -17,7 +68,26 @@
                     "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 914788,
+                    "ap2ID": 733044
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap1ID": 914788,
+                    "ap2ID": 557222
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap1ID": 868425,
+                    "ap2ID": 557222
+                }
+            ],
             "fileTypeVersion": 1
         }
     ],
